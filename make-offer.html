@@ -41,18 +41,7 @@
  
      <!-- Background css -->
      <link rel="stylesheet" id="bg-switcher-css" href="assets/css/backgrounds/bg-4.css">
-     <script>
-      // Get the URLSearchParams object for the current URL
-      const urlParams = new URLSearchParams(window.location.search);
-    
-      // Retrieve the value of a parameter named 'paramName'
-      const paramValue = urlParams.get('id');
-    
-      // Use the retrieved parameter value as needed
-      console.log(paramValue);
-      document.getElementById("productId").value = paramValue;
-      console.log(document.getElementById("productId").value);
-    </script>
+
  </head>
 <body class="register_page">
     <div id="ec-overlay">
@@ -367,7 +356,8 @@
                                     <label>Offered Price*</label>
                                     <input type="text" name="offeredPrice" placeholder="Enter your Offered price" required />
                                 </span>
-                                <input type="hidden" name="productId" id="productId" value="">
+
+                                <input type="hidden" name="productId" id="productId">
                 
                                 <span class="ec-register-wrap">
                                     <label>Description</label>
@@ -583,6 +573,18 @@
     <!-- Main Js -->
     <script src="assets/js/vendor/index.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script defer>
+        // Get the URLSearchParams object for the current URL
+        const urlParams = new URLSearchParams(window.location.search);
+      
+        // Retrieve the value of a parameter named 'paramName'
+        const paramValue = urlParams.get('id');
+      
+        // Use the retrieved parameter value as needed
+        console.log(paramValue);
+        const input1 = document.getElementById("productId");
+        input1.value = paramValue;
+        console.log(input1.value);
+      </script>
 </body>
 </html>
