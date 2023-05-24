@@ -18,9 +18,7 @@ export async function get({ endpoint = "", id = "" }) {
   }
 }
 
-export async function post() {
-  const endpoint = "api/auth/getusername"
-  const data = {}
+export async function post({ endpoint = "", data = {} }) {
   try {
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
@@ -34,8 +32,8 @@ export async function post() {
       credentials: "include"
     });
 
-    // const res = await response.json();
-    // return res;
+    const res = await response.text();
+    return res;
   } catch (error) {
     console.error(error);
   }

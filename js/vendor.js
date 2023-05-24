@@ -28,10 +28,10 @@ products.forEach((product) => {
 
 
 async function load(){
-  let user = await post();
-  // console.log(user.username)
-  // document.getElementById("username").text = user.username;
-
+  let user = await post({endpoint: 'api/auth/getusername'});
+  console.log(user.username)
+  document.getElementById("username").innerHTML = user.username;
+  
 }
 load()
 
