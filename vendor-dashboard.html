@@ -401,50 +401,24 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
-                                            <th scope="col">Image</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Method</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Total</th>
+                                            <th scope="col">Buyer ID</th>
+                                            <th scope="col">Traded product ID</th>
+                                            <th scope="col">Offered Price</th>
+                                            <th scope="col">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row"><span>225</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/1.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Stylish baby shoes</span></td>
-                                            <td><span>COD</span></td>
-                                            <td><span>Pending</span></td>
-                                            <td><span>$320</span></td>
+                                            
+                                            <th scope="row"><span>${offer.id}</span></th>
+                                            <td><span>${offer.buyerID}</span></td>
+                                            <td><span>${offer.tradedProductId}</span></td>
+                                            <td><span>${offer.offeredPrice}</span></td>
+                                            <td><span><button >Accept</button></span></td>
+                                            <td><span><button onclick="deleteprouduct(id)">Decline</button></span></td>
+
                                         </tr>
-                                        <tr>
-                                            <th scope="row"><span>548</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/2.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Sweat Pullover Hoodie</span></td>
-                                            <td><span>Cash</span></td>
-                                            <td><span>Pending</span></td>
-                                            <td><span>$214</span></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><span>684</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/3.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>T-shirt for girl</span></td>
-                                            <td><span>Ewallets</span></td>
-                                            <td><span>On Way</span></td>
-                                            <td><span>$548</span></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><span>987</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/4.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Wool hat for men</span></td>
-                                            <td><span>Bank Transfers</span></td>
-                                            <td><span>Delivered</span></td>
-                                            <td><span>$200</span></td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -455,7 +429,7 @@
                             <h5>Product List</h5>
                             <div class="ec-header-btn">
                                 <a class="btn btn-lg btn-primary" href="#">View All</a>
-                                <a class="btn btn-lg btn-primary" href="#">Add</a>
+                                <a class="btn btn-lg btn-primary" href="add-product.html">Add</a>
                             </div>
                         </div>
                         <div class="ec-vendor-card-body">
@@ -464,50 +438,21 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">ID</th>
-                                            <th scope="col">Image</th>
                                             <th scope="col">Name</th>
+                                            <th scope="col">Description</th>
                                             <th scope="col">Price</th>
-                                            <th scope="col">Status</th>
                                             <th scope="col">Actions</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id = "loadProuct">
                                         <tr>
-                                            <th scope="row"><span>684</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/3.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>T-shirt for girl</span></td>
-                                            <td><span>Ewallets</span></td>
-                                            <td><span>On Way</span></td>
-                                            <td><span>$548</span></td>
+                                            <th scope="row"><span>${param.id}</span></th>
+                                            <td><span>${param.name}</span></td>
+                                            <td><span>${param.description}</span></td>
+                                            <td><span>${param.price}</span></td>
+                                            <td><span><button onclick="deleteprouduct(id)">Delete</button></span></td>
                                         </tr>
-                                        <tr>
-                                            <th scope="row"><span>225</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/1.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Stylish baby shoes</span></td>
-                                            <td><span>COD</span></td>
-                                            <td><span>Pending</span></td>
-                                            <td><span>$320</span></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><span>987</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/4.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Wool hat for men</span></td>
-                                            <td><span>Bank Transfers</span></td>
-                                            <td><span>Delivered</span></td>
-                                            <td><span>$200</span></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row"><span>548</span></th>
-                                            <td><img class="prod-img" src="assets/images/product-image/2.jpg"
-                                                    alt="product image"></td>
-                                            <td><span>Sweat Pullover Hoodie</span></td>
-                                            <td><span>Cash</span></td>
-                                            <td><span>Pending</span></td>
-                                            <td><span>$214</span></td>
-                                        </tr>
+                                        
                                     </tbody>
                                 </table>
                             </div>
