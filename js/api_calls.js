@@ -18,7 +18,9 @@ export async function get({ endpoint = "", id = "" }) {
   }
 }
 
-export async function post({ endpoint = "", data = {} }) {
+export async function post() {
+  endpoint = "api/auth/getusername"
+  data = {}
   try {
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
