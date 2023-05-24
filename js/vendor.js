@@ -32,4 +32,4 @@ async function load(){
   let user = await post({endpoint: 'api/auth/getusername'});
   console.log(user.username)
 }
-
+loa
