@@ -5,7 +5,7 @@ export async function get({ endpoint = "", id = "" }) {
       credentials: "include"
     });
     console.log(response);
-    const data = await response.text()
+    const data = await response.json()
     console.log(endpoint)
     console.log(`response data: ${data}`)
     return data;
