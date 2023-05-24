@@ -10,13 +10,14 @@ export async function get({ endpoint = "", id = "" }) {
     });
     console.log(response);
     const data = await response.json()
-    console.log(endpoint)
+    console.log("endpoint",endpoint)
     console.log(`response data: ${data}`)
     return data;
   } catch (error) {
     console.error(error);
   }
 }
+
 export async function post({ endpoint = "", data = {} }) {
   try {
     const headers = new Headers();
