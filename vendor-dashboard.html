@@ -627,9 +627,7 @@
    <!-- Main Js -->
    <script src="assets/js/main.js"></script>
    <script type="module" src="js/vendor.js"></script>
-   <script src="/js/api_calls.js" type="module"></script>
-   <script type="module">
-    import {post} from '/js/api_calls.js';
+   <script>
     async function getusername(){
         let api = await fetch (`http://estanfa3.com:8443/api/auth/getusername`, {method: 'POST',mode:"cors",headers:{"Access-Control-Allow-Origin":"*"},credentials:"include"})
         let json = await api.json()
