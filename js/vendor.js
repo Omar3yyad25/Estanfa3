@@ -35,7 +35,7 @@ async function load(){
 
 function create_offers(offer) {
   const item = ` <th scope="row"><span>${offer.id}</span></th>
-  <td><span>${offer.buyerID}</span></td>
+  <td><span>${offer.buyerId}</span></td>
   <td><span>${offer.tradedProductId}</span></td>
   <td><span>${offer.offeredPrice}</span></td>
   <td><span><button >Accept</button></span></td>
