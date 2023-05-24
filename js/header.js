@@ -199,9 +199,6 @@ const header_gest = `
 `;
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (localStorage.getItem("user") != null) {
     document.getElementById("header").innerHTML = header_logged;
-  } else {
-    document.getElementById("header").innerHTML = header_gest;
-  }
+  
 });

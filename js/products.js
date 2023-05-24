@@ -29,50 +29,14 @@ function create_product(params) {
                                             <h5 class="ec-pro-title"><a href="/make-offer.html?id=${params.id}">${
                                               params.name
                                             }</a></h5>
-                                            <div class="ec-pro-rating">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star"></i>
-                                            </div>
+                                            
                                             <div class="ec-pro-list-desc">${params.description}</div>
                                             <span class="ec-price">
                                                 <span class="new-price">E£${
                                                   params.price
                                                 }</span>
                                             </span>
-                                            <div class="ec-pro-option">
-                                                <div class="ec-pro-color">
-                                                    <span class="ec-pro-opt-label">Color</span>
-                                                    <ul class="ec-opt-swatch ec-change-img">
-                                                        <li class="active"><a href="#" class="ec-opt-clr-img"
-                                                                data-src="assets/images/product-image/6_1.jpg"
-                                                                data-src-hover="assets/images/product-image/6_1.jpg"
-                                                                data-tooltip="Gray"><span
-                                                                    style="background-color:#e8c2ff;"></span></a></li>
-                                                        <li><a href="#" class="ec-opt-clr-img"
-                                                                data-src="assets/images/product-image/6_2.jpg"
-                                                                data-src-hover="assets/images/product-image/6_2.jpg"
-                                                                data-tooltip="Orange"><span
-                                                                    style="background-color:#9cfdd5;"></span></a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="ec-pro-size">
-                                                    <span class="ec-pro-opt-label">Size</span>
-                                                    <ul class="ec-opt-size">
-                                                        <li class="active"><a href="#" class="ec-opt-sz"
-                                                                data-old="$25.00" data-new="$20.00"
-                                                                data-tooltip="Small">S</a></li>
-                                                        <li><a href="#" class="ec-opt-sz" data-old="$27.00"
-                                                                data-new="$22.00" data-tooltip="Medium">M</a></li>
-                                                        <li><a href="#" class="ec-opt-sz" data-old="$30.00"
-                                                                data-new="$25.00" data-tooltip="Large">X</a></li>
-                                                        <li><a href="#" class="ec-opt-sz" data-old="$35.00"
-                                                                data-new="$30.00" data-tooltip="Extra Large">XL</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 

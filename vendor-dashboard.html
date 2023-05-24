@@ -1,13 +1,10 @@
  <!DOCTYPE html>
  <html lang="en">
- 
+ <script src="./js/api_calls.js" type="module"></script>
  <head>
     <script>
-        async function getusername(){
-            let api = await fetch ('http://estanfa3.com:8443/api/auth/getusername', {method: 'POST' , credentials:'include'})
-            let json = api.json()
-            return json;
-        }
+        import {get} from './js/api_calls.js';
+        get('http://localhost:3000/users/1').then(data => console.log(data))
 
         async function load(){
             let user = await getusername();
