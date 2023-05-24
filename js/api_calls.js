@@ -1,6 +1,6 @@
 export async function get({ endpoint = "", id = "" }) {
   try {
-    const response = await fetch(`http://35.193.13.121:8443/${endpoint}/${id}`);
+    const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`,{mode:"cors"});
     const data = await response.json();
     return data;
   } catch (error) {
@@ -13,7 +13,7 @@ export async function post(endpoint, data = {}) {
     headers.append("Content-Type", "application/json");
     const body = JSON.stringify(data);
 
-    const response = await fetch(`http://35.193.13.121:8443/${endpoint}`, {
+    const response = await fetch(`http://estanfa3.com:8443/${endpoint}`, {
       method: "POST",
       headers,
       body,
