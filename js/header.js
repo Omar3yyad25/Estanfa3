@@ -17,6 +17,10 @@ const header_logged = `
                                 <li class="dropdown"><a href="add-product.html">Upload now</a>
                                     
                                 </li>
+                                <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
+                                    
+                                </li>
+                                
                                
                                     </ul>
                                 </li>
@@ -49,6 +53,10 @@ const header_logged = `
                         <li class="dropdown"><a href="add-product.html">Upload now</a>
                                     
                         </li>
+                        <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
+                                    
+                        </li>
+                        
                         
                     </ul>
                 </div>
@@ -113,6 +121,7 @@ const header_gest = `
                                 <li class="dropdown"><a href="about-us.html">About us</a>
                                     
                                 </li>
+                                
                                     </ul>
                                 </li>
                                 
@@ -141,9 +150,7 @@ const header_gest = `
                         <li><a href="about-us.html">About us</a>
                             
                         </li>
-                        <li class="dropdown"><a href="add-product.html">Upload now</a>
-                                    
-                        </li>
+                        
                         
                     </ul>
                 </div>

@@ -6,7 +6,7 @@ function create_product(params) {
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
                                                     <img class="main-image"
-                                                        src="http://35.193.13.121:8443/${
+                                                        src="http://estanfa3.com:8443/${
                                                           params.image_path
                                                         }" alt="Product" />
                                                    
@@ -36,9 +36,9 @@ function create_product(params) {
                                                 <i class="ecicon eci-star fill"></i>
                                                 <i class="ecicon eci-star"></i>
                                             </div>
-                                            <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                            <div class="ec-pro-list-desc">${params.description}</div>
                                             <span class="ec-price">
-                                                <span class="new-price">${
+                                                <span class="new-price">E£${
                                                   params.price
                                                 }</span>
                                             </span>
