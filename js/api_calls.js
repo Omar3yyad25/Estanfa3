@@ -1,6 +1,6 @@
 export async function get({ endpoint = "", id = "" }) {
   try {
-    const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`,{mode:"cors",headers:{"Access-Control-Allow-Origin":"*"},credentials:"include"});
+    const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`,{mode:"cors",credentials:"include"});
     const data = await response.json();
     return data;
   } catch (error) {
