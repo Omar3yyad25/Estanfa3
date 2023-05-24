@@ -34,8 +34,8 @@ export async function post() {
       credentials: "include"
     });
 
-    const res = await response.json();
-    return res;
+    // const res = await response.json();
+    // return res;
   } catch (error) {
     console.error(error);
   }
