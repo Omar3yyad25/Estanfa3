@@ -1,7 +1,7 @@
 export async function get({ endpoint = "", id = "" }) {
   try {
     const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`, {
-      mode: "no-cors",
+      mode: "cors",
       credentials: "include",
       headers: {
         'Content-Type': 'application/json',
