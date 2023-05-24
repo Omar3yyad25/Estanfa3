@@ -96,4 +96,4 @@ products.forEach((product) => {
   add_product(product);
 });
 
-document.getElementById("counter").innerText =  `Showing 21-1 of ${products.length} item(s)`;
+document.getElementById("counter").innerText =  `Showing 1-1 of ${products.length} item(s)`;
