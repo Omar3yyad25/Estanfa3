@@ -91,6 +91,7 @@ function add_product(product) {
 }
 
 const products = await get({ endpoint: "getproduct" });
+console.log(products)
 console.log(products, `here at products Line: 5`);
 products.forEach((product) => {
   add_product(product);
