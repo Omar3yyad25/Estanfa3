@@ -41,6 +41,16 @@
  
      <!-- Background css -->
      <link rel="stylesheet" id="bg-switcher-css" href="assets/css/backgrounds/bg-4.css">
+     <script>
+      // Get the URLSearchParams object for the current URL
+      const urlParams = new URLSearchParams(window.location.search);
+    
+      // Retrieve the value of a parameter named 'paramName'
+      const paramValue = urlParams.get('id');
+    
+      // Use the retrieved parameter value as needed
+      console.log(paramValue);
+    </script>
  </head>
 <body class="register_page">
     <div id="ec-overlay">
