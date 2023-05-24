@@ -50,6 +50,7 @@
     
       // Use the retrieved parameter value as needed
       console.log(paramValue);
+      document.getElementById("productId").value = paramValue;
     </script>
  </head>
 <body class="register_page">
@@ -365,6 +366,7 @@
                                     <label>Offered Price*</label>
                                     <input type="text" name="offeredPrice" placeholder="Enter your Offered price" required />
                                 </span>
+                                <input type="hidden" name="productId" id="productId" value="">
                 
                                 <span class="ec-register-wrap">
                                     <label>Description</label>
