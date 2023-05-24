@@ -1,4 +1,4 @@
-import { get } from "./api_calls.js";
+import { get,post } from "./api_calls.js";
 
 function create_product(param) {
   const item = `
@@ -26,3 +26,10 @@ console.log(products, `here at products Line: 5`);
 products.forEach((product) => {
   add_product(product);
 });
+
+
+async function load(){
+  let user = await post({endpoint: 'api/auth/getusername'});
+  console.log(user.username)
+}
+

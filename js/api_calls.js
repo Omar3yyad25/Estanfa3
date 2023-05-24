@@ -1,13 +1,17 @@
 export async function get({ endpoint = "", id = "" }) {
   try {
-    const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`,{mode:"no-cors", credentials:"include"});
+    const response = await fetch(`http://estanfa3.com:8443/${endpoint}/${id}`, {
+      mode: "no-cors",
+      credentials: "include"
+    });
+    console.log(response);
     const data = await response.json();
     return data;
   } catch (error) {
     console.error(error);
   }
 }
-export async function post(endpoint, data = {}) {
+export async function post({ endpoint = "", data = {} }) {
   try {
     const headers = new Headers();
     headers.append("Content-Type", "application/json");
@@ -17,7 +21,8 @@ export async function post(endpoint, data = {}) {
       method: "POST",
       headers,
       body,
-      mode:"no-cors", credentials:"include"
+      mode: "no-cors",
+      credentials: "include"
     });
 
     const res = await response.json();
