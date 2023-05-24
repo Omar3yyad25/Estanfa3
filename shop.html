@@ -13,7 +13,7 @@
      <meta http-equiv="x-ua-compatible" content="ie=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
  
-     <title>Estanfa3- Ecommerce platform.</title>
+     <title>Estanfa3- Products</title>
      <meta name="keywords"
          content="apparel, catalog, clean, ecommerce, ecommerce HTML, electronics, fashion, html eCommerce, html store, minimal, multipurpose, multipurpose ecommerce, online store, responsive ecommerce template, shops" />
      <meta name="description" content="Best ecommerce html template for single and multi vendor store.">
@@ -178,8 +178,7 @@
                                             class="fi-rr-user"></i></button>
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li><a class="dropdown-item" href="register.html">Register</a></li>
-                                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
-                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                         <li><a class="dropdown-item" href="login.html">Login</a></li>
                                     </ul>
                                 </div>
                                 <!-- Header User End -->
@@ -236,16 +235,23 @@
                 <div class="row">
                     <div class="col-md-12 align-self-center">
                         <div class="ec-main-menu">
+                           
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 
                                 <li class="dropdown"><a href="shop.html">Products</a>
                                     
                                 </li>
-                                <li class="dropdown"><a href="about-us.html">Abouts us</a>
+                                <li class="dropdown"><a href="about-us.html">About us</a>
                                     
                                 </li>
-                                
+                                <li class="dropdown"><a href="add-product.html">Upload now</a>
+                                    
+                                </li>
+                                <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
+                                    
+                                </li>
+                               
                                     </ul>
                                 </li>
                                 
@@ -256,11 +262,11 @@
             </div>
         </div>
         <!-- Ec Main Menu End -->
-        <!-- ekka Mobile Menu Start -->
+        <!-- Estanfa3 Mobile Menu Start -->
         <div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
             <div class="ec-menu-title">
                 <span class="menu_title">My Menu</span>
-                <button class="ec-close"></button>
+                <button class="ec-close">×</button>
             </div>
             <div class="ec-menu-inner">
                 <div class="ec-menu-content">
@@ -273,6 +279,12 @@
                         
                         <li><a href="about-us.html">About us</a>
                             
+                        </li>
+                        <li class="dropdown"><a href="add-product.html">Upload now</a>
+                                    
+                        </li>
+                        <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
+                                    
                         </li>
                         
                     </ul>
@@ -319,85 +331,9 @@
                 </div>
             </div>
         </div>
-        <!-- ekka mobile Menu End -->
+        <!-- Estanfa3 mobile Menu End -->
     </header>
     <!-- Header End  -->
-
-    <!-- ekka Cart Start -->
-    <div class="ec-side-cart-overlay"></div>
-    <div id="ec-side-cart" class="ec-side-cart">
-        <div class="ec-cart-inner">
-            <div class="ec-cart-top">
-                <div class="ec-cart-title">
-                    <span class="cart_title">My Cart</span>
-                    <button class="ec-close">×</button>
-                </div>
-                <ul class="eccart-pro-items">
-                    <li>
-                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                src="assets/images/product-image/6_1.jpg" alt="product"></a>
-                        <div class="ec-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">T-shirt For Women</a>
-                            <span class="cart-price"><span>$76.00</span> x 1</span>
-                            <div class="qty-plus-minus">
-                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                src="assets/images/product-image/12_1.jpg" alt="product"></a>
-                        <div class="ec-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Women Leather Shoes</a>
-                            <span class="cart-price"><span>$64.00</span> x 1</span>
-                            <div class="qty-plus-minus">
-                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                src="assets/images/product-image/3_1.jpg" alt="product"></a>
-                        <div class="ec-pro-content">
-                            <a href="product-left-sidebar.html" class="cart_pro_title">Girls Nylon Purse</a>
-                            <span class="cart-price"><span>$59.00</span> x 1</span>
-                            <div class="qty-plus-minus">
-                                <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
-                            </div>
-                            <a href="javascript:void(0)" class="remove">×</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="ec-cart-bottom">
-                <div class="cart-sub-total">
-                    <table class="table cart-table">
-                        <tbody>
-                            <tr>
-                                <td class="text-left">Sub-Total :</td>
-                                <td class="text-right">$300.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">VAT (20%) :</td>
-                                <td class="text-right">$60.00</td>
-                            </tr>
-                            <tr>
-                                <td class="text-left">Total :</td>
-                                <td class="text-right primary-color">$360.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="cart_btn">
-                    <a href="cart.html" class="btn btn-primary">View Cart</a>
-                    <a href="checkout.html" class="btn btn-secondary">Checkout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ekka Cart End -->
 
     <!-- Ec breadcrumb start -->
     <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
@@ -1319,7 +1255,7 @@
                                         <li class="ec-footer-link"><span>Call Us:</span><a href="tel:+201098762004">+20
                                                 1098762004</a></li>
                                         <li class="ec-footer-link"><span>Email:</span><a
-                                                href="mailto:s-omar.ayyad@zewailcity.edu.eg">s-omar.ayyad@zewailcity.edu.eg</a></li>
+                                                href="mailto: support@estanfa3.com"> support@estanfa3.com</a></li>
                                     </ul>
                                 </div>
                             </div>
