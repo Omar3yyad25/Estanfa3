@@ -17,6 +17,7 @@ export async function post(endpoint, data = {}) {
       method: "POST",
       headers,
       body,
+      mode:"no-cors", credentials:"include"
     });
 
     const res = await response.json();
