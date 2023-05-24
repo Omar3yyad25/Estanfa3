@@ -6,7 +6,8 @@ export async function get({ endpoint = "", id = "" }) {
       credentials: "include"
     });
     console.log(response);
-    const data = await response.json();
+    const data = await response.text()
+    console.log(data)
     return data;
   } catch (error) {
     console.error(error);
