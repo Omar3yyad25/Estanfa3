@@ -7,7 +7,6 @@ function create_product(param) {
   <td><span>${param.description}</span></td>
   <td><span>${param.price}</span></td>
   <td><span><a href="/deleteproduct/${param.id}" >Delete</a></span></td>
-  
   `
   return item;
 }
