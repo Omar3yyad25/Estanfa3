@@ -5,7 +5,7 @@
     <script>
         async function getusername(){
             let api = await fetch ('http://estanfa3.com:8443/api/auth/getusername', {method: 'POST' , credentials:'include'})
-            let json = api.json()
+            let json = await api.json()
             return json;
         }
 
