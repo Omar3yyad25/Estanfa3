@@ -6,7 +6,7 @@ function create_product(param) {
   <td><span>${param.name}</span></td>
   <td><span>${param.description}</span></td>
   <td><span>${param.price}</span></td>
-  <td><span><a href="/deleteproduct/${param.id}" >Delete</a></span></td>
+  <td><span><a href="http://estanfa3.com:8443/deleteproduct/${param.id}" >Delete</a></span></td>
   `
   return item;
 }
@@ -31,4 +31,28 @@ async function load(){
   let user = await post({endpoint: 'api/auth/getusername'});
   console.log(user.username)
 }
-loa
+
+
+function create_offers(offer) {
+  item = ` <th scope="row"><span>${offer.id}</span></th>
+  <td><span>${offer.buyerID}</span></td>
+  <td><span>${offer.tradedProductId}</span></td>
+  <td><span>${offer.offeredPrice}</span></td>
+  <td><span><button >Accept</button></span></td>
+  <td><span><button onclick="deleteprouduct(id)">Decline</button></span></td>
+`
+  const offers = document.getElementById("load_offer");
+    
+  const new_offer = document.createElement("tr");
+
+  new_offer.innerHTML = item;
+  offers.appendChild(new_offer);
+  
+}
+
+const offers = await get({ endpoint: "getoffers" });
+console.log(offers)
+console.log(offers, `here at offers Line: 5`);
+offers.forEach((offer) => {
+  create_offers(offer);
+});
