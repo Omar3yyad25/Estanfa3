@@ -33,15 +33,12 @@ export async function post({ endpoint = "", data = {} }) {
     });
 
     const res = await response.text();
-
-    let data = ''
     try{
-      data = JSON.parse(res);
-    }catch(e){
-      data = res
-    }
-    
-    return data;
+      const jsonres = JSON.parse(res);
+      return jsonres
+    }catch(){}
+
+    return res;
   } catch (error) {
     console.error(error);
   }
