@@ -14,7 +14,7 @@ const header_logged = `
                                 <li class="dropdown"><a href="about-us.html">About us</a>
                                     
                                 </li>
-                                <li class="dropdown"><a href="add-shop.html">Upload now</a>
+                                <li class="dropdown"><a href="add-product.html">Upload now</a>
                                     
                                 </li>
                                 <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
@@ -50,7 +50,7 @@ const header_logged = `
                         <li><a href="about-us.html">About us</a>
                             
                         </li>
-                        <li class="dropdown"><a href="add-shop.html">Upload now</a>
+                        <li class="dropdown"><a href="add-product.html">Upload now</a>
                                     
                         </li>
                         <li class="dropdown"><a href="vendor-dashboard.html">Dashboard</a>
