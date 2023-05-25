@@ -28,7 +28,7 @@ export async function post({ endpoint = "", data = {} }) {
       method: "POST",
       headers,
       body,
-      mode: "no-cors",
+      mode: "cors",
       credentials: "include"
     });
 
