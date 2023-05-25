@@ -36,7 +36,9 @@ export async function post({ endpoint = "", data = {} }) {
     try{
       const jsonres = JSON.parse(res);
       return jsonres
-    }catch(){}
+    }catch(e){
+      return res
+    }
 
     return res;
   } catch (error) {
