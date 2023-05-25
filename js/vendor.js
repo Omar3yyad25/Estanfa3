@@ -43,7 +43,7 @@ function create_offers(offer) {
   <td><span>${offer.tradedProductId}</span></td>
   <td><span>${offer.offeredPrice}</span></td>
   <td><span><button >Accept</button></span></td>
-  <td><span><button onclick="deleteprouduct(id)">Decline</button></span></td>
+  <td><span><button href="http://estanfa3.com:8443/deleteoffer/${offer.id}">Decline</button></span></td>
 `
   const offers = document.getElementById("load_offer");
     
