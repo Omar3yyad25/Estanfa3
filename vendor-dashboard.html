@@ -374,10 +374,37 @@
                 </div>
                 <div class="ec-shop-rightside col-lg-9 col-md-12">
                     <div class="row">
-                    
+                        
                         <div class="ec-vendor-dashboard-card space-bottom-30">
                             <div class="ec-vendor-card-header">
-                                <h5>Latest Contract</h5>
+                                <h5>Latest Sent Contracts</h5>
+                                <div class="ec-header-btn">
+                                    <a class="btn btn-lg btn-primary" href="#">View All</a>
+                                </div>
+                            </div>
+                            <div class="ec-vendor-card-body">
+                                <div class="ec-vendor-card-table">
+                                    <table class="table ec-table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Traded product ID</th>
+                                                <th scope="col">Buyer ID</th>
+                                                <th scope="col">Dealt Price</th>
+                                                <th scope="col">Difference in Price</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="load_contracts">
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ec-vendor-dashboard-card space-bottom-30">
+                            <div class="ec-vendor-card-header">
+                                <h5>Latest Recived Contracts</h5>
                                 <div class="ec-header-btn">
                                     <a class="btn btn-lg btn-primary" href="#">View All</a>
                                 </div>
@@ -507,7 +534,7 @@
                                 <h4 class="ec-footer-heading">Account</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="user-profile.html">My Account</a></li>
+                                        <li class="ec-footer-link"><a href="vendor-dashboard.html">My Account</a></li>
                                         <li class="ec-footer-link"><a href="#">Wish List</a></li>
                                     </ul>
                                 </div>
