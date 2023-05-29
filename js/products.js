@@ -4,9 +4,9 @@ function create_product(params) {
                                     <div class="ec-product-inner">
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
-                                                <a href="product-left-sidebar.html" class="image">
+                                                <a href="#" class="image">
                                                     <img class="main-image"
-                                                        src="http://estanfa3.com:8443${
+                                                        src="http://estanfa3.com:8443/${
                                                           params.image_path
                                                         }" alt="Product" />
                                                    
@@ -20,8 +20,7 @@ function create_product(params) {
                                                         title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
                                                     <button title="Add To Cart" class="add-to-cart"><i
                                                             class="fi-rr-shopping-basket"></i> Add To Cart</button>
-                                                    <a class="ec-btn-group wishlist" title="Wishlist"><i
-                                                            class="fi-rr-heart"></i></a>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
