@@ -6,7 +6,7 @@ function create_product(params) {
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
                                                     <img class="main-image"
-                                                        src="http://estanfa3.com:8443/${
+                                                        src="http://estanfa3.com:8443${
                                                           params.image_path
                                                         }" alt="Product" />
                                                    
