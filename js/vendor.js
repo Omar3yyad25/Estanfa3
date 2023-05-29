@@ -65,7 +65,7 @@ offers.forEach((offer) => {
 function create_contracts(contract) {
   const item = ` <th scope="row"><span>${contract.id}</span></th>
   <td><span>${contract.tradedProductId}</span></td>
-  <td><span>${contract.buyerId}</span></td>
+  <td><span>${contract.buyerId}</span></td> 
   <td><span>${contract.dealtPrice}</span></td>
   <td><span>${contract.diffPrice}</span></td>
   <td><span><a href="http://estanfa3.com:8443/deletecontract/${contract.id}">Decline</a></span></td>
