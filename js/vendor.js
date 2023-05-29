@@ -84,3 +84,27 @@ console.log(contracts, `here at offers Line: 5`);
 contracts.forEach((contract) => {
   create_contracts(contract);
 });
+
+
+function create_sent_contracts(contract) {
+  const item = ` <th scope="row"><span>${contract.id}</span></th>
+  <td><span>${contract.tradedProductId}</span></td>
+  <td><span>${contract.sellerId}</span></td> 
+  <td><span>${contract.dealtPrice}</span></td>
+  <td><span>${contract.diffPrice}</span></td>
+  <td><span><a href="http://estanfa3.com:8443/deletecontract/${contract.id}">Decline</a></span></td>
+`
+  const contracts = document.getElementById("load_sent_contracts");
+    
+  const new_contract = document.createElement("tr");
+
+  new_contract.innerHTML = item;
+  contracts.appendChild(new_contract);
+  
+}
+
+const sent_contracts = await get({ endpoint: "getsentcontracts" });
+console.log(sent_contracts, `here at offers Line: 5`);
+sent_contracts.forEach((contract) => {
+  create_sent_contracts(contract);
+});
